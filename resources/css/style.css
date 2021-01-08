@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 section {
     padding: 80px 0px;
 }
@@ -211,4 +220,51 @@ ion-icon {
 .meal-img img:hover {
     opacity: 1;
     transform: scale(1.03);
+}
+
+.how-it-works-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.how-it-works-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-img {
+    width: 40%;
+}
+
+.section-how-it-works {
+    background-color: #f4f4f4;
+}
+
+.how-it-works {
+    margin-bottom: 50px;
+}
+
+.how-it-works:last-of-type {
+    margin-bottom: 80px;
+}
+
+.how-it-works div {
+    color: #f39c12;
+    border: 2px solid #f39c12;
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    height: 50px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
