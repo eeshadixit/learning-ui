@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+section {
+    padding: 80px 0px;
+}
+
 .row {
     width: 1140px;
     margin: 0 auto;
@@ -25,12 +29,10 @@ header {
     height: 100vh;
 }
 
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -38,9 +40,58 @@ h1 {
     margin-bottom: 20px;
     color: #ffffff;
     font-size: 200%;
-    font-weight: 300;
-    text-transform: uppercase;
     word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #f39c12;
+    content: " ";
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+ion-icon {
+    align-content: center;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .btn:link,
