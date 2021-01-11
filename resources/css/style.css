@@ -38,6 +38,21 @@ header {
     height: 100vh;
 }
 
+a:link,
+a:visited {
+    color: #f39c12;
+    text-decoration: none;
+    border-bottom: 1px solid #f39c12;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 h1, h2, h3 {
     font-weight: 300;
     text-transform: uppercase;
@@ -74,10 +89,22 @@ h2:after {
     margin-top: 30px;
 }
 
-ion-icon {
+.section-features ion-icon {
     align-content: center;
     color: #f39c12;
     margin-bottom: 10px;
+}
+
+.section-cities ion-icon {
+    color:#f39c12;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    margin-right: 10px;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 .box {
@@ -130,11 +157,6 @@ ion-icon {
 .btn-ghost:visited {
     border: 1px solid #f39c12;
     color: #f39c12;
-}
-
-.btn:hover,
-.btn:active {
-    background-color: #d8890b;
 }
 
 .btn-full:hover,
@@ -252,7 +274,6 @@ ion-icon {
 .how-it-works div {
     color: #f39c12;
     border: 2px solid #f39c12;
-    display: inline-block;
     float: left;
     border-radius: 50%;
     height: 50px;
@@ -267,4 +288,20 @@ ion-icon {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.city-details {
+    margin-bottom: 7px;
 }
