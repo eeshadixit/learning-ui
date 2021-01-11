@@ -35,6 +35,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -53,7 +54,7 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -77,6 +78,12 @@ h2 {
 h3 {
     font-size: 110%;
     margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 90%;
+    margin-top: 15px;
+    text-align: right;
 }
 
 h2:after {
@@ -304,4 +311,47 @@ h2:after {
 
 .city-details {
     margin-bottom: 7px;
+}
+
+.section-customer-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.section-customer-testimonials img {
+    width: 100;
+    height: auto;
+    overflow: hidden;
+    align-content: center;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    display: block;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before {
+    content: "\201D";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 15px;
+    display: block;
+}
+
+cite img {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
