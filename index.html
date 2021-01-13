@@ -292,7 +292,7 @@ a<!DOCTYPE html>
                     <div class="plan-box">
                         <div>
                             <h3>Starter</h3>
-                            <p class="plan-price">19$ <span>/ meal</span></p>
+                            <p class="plan-price">$19<span>/ meal</span></p>
                             <p class="plan-price-meal">&nbsp;</p>
                         </div>
                         <div>
@@ -307,7 +307,71 @@ a<!DOCTYPE html>
                             <a href="#" class="btn btn-ghost">Sign Up Now</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-sign-up">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="POST" action="#" class="sign-up-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="instagram" selected>Instagram</option>
+                                <option value="twitter">Twitter</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="friends">Friends</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked>Yes, please!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Drop us a line!</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="msg" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </body>
