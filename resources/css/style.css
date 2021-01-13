@@ -144,7 +144,7 @@ h2:after {
 
 .btn:hover,
 .btn:active {
-    background-color: #d8890b;
+    background-color: #f39c12;
 }
 
 .btn-full:link,
@@ -163,13 +163,14 @@ h2:after {
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #d8890b;
+    background-color: #e29211;
+    border: 1px solid #e29211;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    background-color: #d8890b;
-    border: 1px solid #d8890b;
+    background-color: #e29211;
+    border: 1px solid #e29211;
     color: #ffffff;
 }
 
