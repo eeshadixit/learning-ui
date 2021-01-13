@@ -133,7 +133,8 @@ h2:after {
 }
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -143,12 +144,15 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
-    background-color: #d8890b;
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #f39c12;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #f39c12;
     border: 1px solid #f39c12;
     color: #ffffff;
@@ -162,14 +166,17 @@ h2:after {
 }
 
 .btn-full:hover,
-.btn-full:active {
-    border: 1px solid #d8890b;
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #e29211;
+    border: 1px solid #e29211;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    background-color: #d8890b;
-    border: 1px solid #d8890b;
+    background-color: #e29211;
+    border: 1px solid #e29211;
     color: #ffffff;
 }
 
@@ -403,3 +410,48 @@ cite img {
 .plan-box ul li {
     padding: 5px 0;
 }
+
+.sign-up-form {
+    width: 60%;
+    margin: 0 12%;
+}
+
+input[type=text], 
+input[type=email], 
+select,
+option,
+textarea {
+    width: 50%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    font-weight: 200;
+    font-size: 95%;
+}
+
+textarea {
+    height: 100px;
+}
+
+select,
+option {
+    font-weight: 100;
+}
+
+label {
+    padding-left: 80px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*#checkbox {
+    padding-left: 25%;
+    color: #f39c12;
+    font-size: 90%;
+}*/
