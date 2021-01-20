@@ -1,0 +1,126 @@
+/* For big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row { padding: 0 2%; }
+
+}
+
+/* For small tablets to large tablets, from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    .row { width: auto; }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .how-it-works-box { margin-top: 10px; }
+    .how-it-works { margin-bottom: 40px; }
+    .how-it-works-box:last-child { margin-top: 10px; }
+    .how-it-works:last-of-type { margin-bottom: 60px; }
+    .app-img { width: 50%; }
+    .section-cities ion-icon,
+    .section-plans ion-icon { 
+        width: 17px; 
+        margin-right: 5px;
+    }
+    .city-details { font-size: 90%; }
+    .section-customer-testimonials img { width: 75px; }
+    .plan-box {
+        width: 95%;
+        margin-left: 0;
+    }
+    .plan-price { font-size: 250%; }
+    .plan-box ul li { font-size: 95%; }
+    .sign-up-form { width: 100%; }
+    input[type=text], 
+    input[type=email], 
+    select,
+    option,
+    textarea { width: 65%; }
+    label { padding-left: 0; }
+
+    
+}
+
+/*  For small phones to small tablets, from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    .hero-text-box,
+    .row { padding: 0 4%; }
+    .col { 
+        width: 100%; 
+        margin: 0 0 4% 0;
+    }
+
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    nav div {
+        display: flex;
+        justify-content: center;
+    }
+    .main-nav { display: none; }
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .btn-app img { 
+        height: 35px;
+        margin-left: 11%;
+        margin-right: 0;
+    }
+    .section-cities .col { margin: 0 0 4% 10%; }
+    .section-cities .box img { width: 80%; }
+    .app-img { width: 40%; }
+    .how-it-works-box:first-child { text-align: center; }
+    .how-it-works { margin-bottom: 20px; }
+    .how-it-works:last-of-type { margin-bottom: 20px; }
+    .how-it-works div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        margin-right: 15px;
+        font-size: 130%;
+    }
+    footer .row div {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+/* For small phones, from 0px to 480px */
+@media only screen and (max-width: 480px) {
+
+    section { padding: 25px 0; }
+    .hero-text-box,
+    .row { padding: 0 5% 0 10%; }
+
+    .btn-ghost:link, .btn-ghost:visited { margin-top: 10px; }
+    .how-it-works div {
+        height: 30px;
+        width: 30px;
+        padding: 2px;
+        margin-right: 10px;
+        font-size: 120%;
+    }
+    .btn-app img { 
+        height: 30px;
+        margin-left: 11%;
+        margin-right: 0;
+    }
+    .section-customer-testimonials img { width: 65px; }
+    .plan-price { font-size: 220%; }
+    input[type=text], 
+    input[type=email], 
+    select,
+    option,
+    textarea { width: 75%; }
+
+}

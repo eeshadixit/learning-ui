@@ -22,13 +22,15 @@ section {
     margin: 0 auto;
 }
 
-html {
+html,
+body {
     background-color: #ffffff;
     color: #555555;
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 header {
@@ -187,6 +189,14 @@ input[type=submit]:active{
     margin-top: 20px;
 }
 
+.logo-black {
+    height: 50px;
+    width: auto;
+    float: left;
+    display: none;
+    margin-top: 5px;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -253,10 +263,13 @@ input[type=submit]:active{
     transform: scale(1.03);
 }
 
+.how-it-works-box {
+    margin-top: 30px;
+}
+
 .how-it-works-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;
 }
 
 .how-it-works-box:last-child {
@@ -304,7 +317,7 @@ input[type=submit]:active{
     border: 0;
 }
 
-.box img {
+.section-cities .box img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
@@ -323,7 +336,7 @@ input[type=submit]:active{
 }
 
 .section-customer-testimonials img {
-    width: 100;
+    width: 100px;
     height: auto;
     overflow: hidden;
     align-content: center;
