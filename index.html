@@ -1,9 +1,12 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 
@@ -15,26 +18,27 @@ a<!DOCTYPE html>
 
     <body>
         <header>
-            <div class="row">
-                <nav>
+            <nav>
+                <div class="row">
                     <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
                     <ul class="main-nav">
                         <li><a href="#">Food Delivery</a></li>
                         <li><a href="#">How It Works</a></li>
                         <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign Up!</a></li>
+                        <li><a href="#">Sign Up</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+            </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
 
-                <a href="#" class="btn btn-full">I'm Hungry!</a>
-                <a href="#" class="btn btn-ghost">Show Me More!</a>
+                <a href="#" class="btn btn-full js--scroll-to-plans">I'm Hungry!</a>
+                <a href="#" class="btn btn-ghost js--scroll-to-start">Show Me More!</a>
             </div>
         </header>
 
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
@@ -243,7 +247,7 @@ a<!DOCTYPE html>
             </div>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
@@ -298,7 +302,7 @@ a<!DOCTYPE html>
                         <div>
                             <ul>
                                 <li> <ion-icon name="checkmark-outline" size="small"></ion-icon>1 meal</li>
-                                <li><ion-icon name="checkmark-outline" size="small"></ion-icon>Order from 8 am to 12 pm</li>
+                                <li><ion-icon name="checkmark-outline" size="small"></ion-icon>Order from 8 to noon</li>
                                 <li><ion-icon name="close-outline" size="small"></ion-icon>Access to newest creations</li>
                                 <li><ion-icon name="checkmark-outline" size="small"></ion-icon>Free delivery</li>
                             </ul>
@@ -402,4 +406,8 @@ a<!DOCTYPE html>
             </div>
         </footer>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources\js\script.js"></script>
 </html>
