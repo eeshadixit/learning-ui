@@ -56,4 +56,15 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+    /* mobile navigation */
+    $('.js--small-nav').click(function() {
+        var nav = $('.js--main-nav');
+        nav.slideToggle(200);
+        $('#menu').toggle();
+        $('#close').toggle();
+        if($('#close').is(":visible")) {
+            $("#close").css("display", "block");
+        }
+    });
+
 });

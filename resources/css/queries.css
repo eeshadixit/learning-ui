@@ -61,11 +61,34 @@
 
     h1 { font-size: 180%; }
     h2 { font-size: 150%; }
-    nav div {
-        display: flex;
-        justify-content: center;
-    }
+    
     .main-nav { display: none; }
+    .main-nav { 
+        float: left;
+        margin-top: 30px; 
+        margin-left: 25px;
+    }
+    .main-nav li { display: block; }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 7px 0;
+        font-size: 100%;
+    }
+    .small-nav { display: inline-block; }
+    .sticky .main-nav { margin-top: 10px; }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0px; }
+    .sticky main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        font-size: 80%;
+    }
+    .sticky .small-nav { margin-top: 10px; }
+    .sticky .small-nav ion-icon { color: #555; }
+    .sticky #close { display: block; }
+    .sticky .logo-black { margin: 15px 0; }
     .long-copy {
         width: 100%;
         margin-left: 0%;
